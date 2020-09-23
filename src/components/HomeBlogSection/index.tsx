@@ -1,18 +1,19 @@
 import React from "react";
 import { links } from "../../constants/links";
+import { BlogPost } from "../../interfaces/BlogPost";
 import { addEllispis } from "../../utils/string";
 import {
   Heading,
   Post,
   PostCover,
-  PostGroups,
+  PostGroup,
   PostText,
   PostTitle,
   ReadMoreLink,
 } from "./styles";
 import { Container, ShowMoreLink, TopSection, Wrapper } from "./styles";
 
-const blogs: { img: string; title: string; text: string; path: string }[] = [
+const blogs: BlogPost[] = [
   {
     img: "/images/farm.png",
     title: "How Ag-Tech Ripened into a Growing Market",
@@ -44,7 +45,7 @@ export const HomeBlogSection = () => {
           <Heading>Check Our Blog</Heading>
           <ShowMoreLink to={links.BLOG}>Show more</ShowMoreLink>
         </TopSection>
-        <PostGroups>
+        <PostGroup>
           {blogs.map(({ img, title, text, path }, id) => (
             <Post key={id}>
               <PostCover>
@@ -55,7 +56,7 @@ export const HomeBlogSection = () => {
               <ReadMoreLink to={path}>Read more</ReadMoreLink>
             </Post>
           ))}
-        </PostGroups>
+        </PostGroup>
       </Wrapper>
     </Container>
   );

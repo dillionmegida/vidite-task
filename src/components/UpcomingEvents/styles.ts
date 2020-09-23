@@ -5,6 +5,7 @@ import { BreakpointWrapper } from "../BreakpointWrapper";
 
 export const Container = styled(BreakpointWrapper)`
   padding: 20px 50px;
+  margin-top: 50px;
 `;
 
 export const Wrapper = styled.div`
@@ -32,7 +33,7 @@ export const ShowMoreLink = styled(Link)`
   color: black;
 `;
 
-export const PostGroup = styled.div`
+export const EventGroup = styled.div`
   display: flex;
 
   & > *:not(:first-child) {
@@ -40,11 +41,11 @@ export const PostGroup = styled.div`
   }
 `;
 
-export const Post = styled.div`
+export const Event = styled.div`
   width: 100%;
 `;
 
-export const PostCover = styled.div`
+export const EventCover = styled.div`
   width: 100%;
   height: 250px;
   border-radius: 10px;
@@ -57,20 +58,20 @@ export const PostCover = styled.div`
   }
 `;
 
-export const PostTitle = styled.div`
-  margin-top: 15px;
-  font-size: 18px;
-`;
-
-export const PostText = styled.div`
-  margin-top: 10px;
-  font-size: 15px;
-  color: ${colors.grey800};
-`;
-
-export const ReadMoreLink = styled(Link)`
+export const EventType = styled.div`
   color: ${colors.teal500};
   display: block;
   margin-top: 15px;
   font-size: 14px;
+`;
+
+export const EventTitle = styled.div`
+  margin-top: 15px;
+  font-size: 18px;
+`;
+
+export const EventDate = styled.div`
+  margin-top: 10px;
+  font-size: 14px;
+  color: ${colors.grey800};
 `;
