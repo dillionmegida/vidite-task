@@ -1,12 +1,13 @@
 import React from "react";
 import {
-  HeaderWrapper,
+  HeaderContainer,
   LogoContainer,
   Logo,
   MainLinks,
   _Link,
   _AuthLink,
   AuthLinks,
+  Header as _Header,
 } from "./styles";
 import { Link } from "react-router-dom";
 import { links } from "../../constants/links";
@@ -15,8 +16,8 @@ import styled from "styled-components";
 
 export const Header = () => {
   return (
-    <HeaderWrapper>
-      <header>
+    <HeaderContainer>
+      <_Header>
         <LogoContainer>
           <Link to={links.HOME}>
             <Logo src="/images/logo.png" />
@@ -42,7 +43,7 @@ export const Header = () => {
             ))}
           </AuthLinks>
         </div>
-      </header>
-    </HeaderWrapper>
+      </_Header>
+    </HeaderContainer>
   );
 };

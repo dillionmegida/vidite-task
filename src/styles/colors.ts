@@ -6,7 +6,7 @@ type ColorDictionary = {
 
 const colors: ColorDictionary = {
   teal200: "#eefaf2",
-  teal500: "green",
+  teal500: "#94c81e",
 };
 
 export { colors };

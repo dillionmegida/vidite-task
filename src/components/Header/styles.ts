@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { colors } from "../../constants/colors";
+import { breakpoints } from "../../styles/breakpoints";
+import { colors } from "../../styles/colors";
+import { BreakpointWrapper } from "../BreakpointWrapper";
 
-export const HeaderWrapper = styled.div`
+export const HeaderContainer = styled.div`
   width: 100%;
   background-color: ${colors.teal200};
   padding: 10px 20px;
   height: 100px;
+`;
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+export const Header = styled(BreakpointWrapper)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const LogoContainer = styled.div`
@@ -51,6 +53,7 @@ export const _Link = styled(Link)`
 `;
 
 export const _AuthLink = styled(_Link)<{ invertColor?: boolean }>`
+  display: block;
   background-color: ${({ invertColor }) =>
     invertColor ? colors.teal500 : "transparent"};
   color: ${({ invertColor }) => (invertColor ? "white" : colors.teal500)};
@@ -59,7 +62,9 @@ export const _AuthLink = styled(_Link)<{ invertColor?: boolean }>`
   border-color: ${({ invertColor }) =>
     invertColor ? "transparent" : colors.teal500};
   border-radius: 5px;
-  padding: 15px 25px;
+  padding: 15px 30px;
+  width: 150px;
+  text-align: center;
 
   &:hover {
     text-decoration: none;
