@@ -45,13 +45,13 @@ export const RightColumn = styled.div`
 `;
 
 export const Heading = styled.div`
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 20px;
 `;
 
 export const Para = styled.div`
   line-height: 1.5;
-  color: ${colors.grey600};
+  color: ${colors.grey800};
   font-size: 18px;
   margin-top: 20px;
 `;
