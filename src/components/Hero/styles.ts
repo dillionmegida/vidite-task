@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { breakpoints } from "../../styles/breakpoints";
 import { colors } from "../../styles/colors";
 import { fontSizes } from "../../styles/fonts";
 import { BreakpointWrapper } from "../BreakpointWrapper";
-import { Button } from "../Button";
+import { Button } from "../Button/index";
 
 export const HeroContainer = styled.div`
   width: 100%;

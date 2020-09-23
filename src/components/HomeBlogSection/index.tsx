@@ -49,7 +49,7 @@ export const HomeBlogSection = () => {
           {blogs.map(({ img, title, text, path }, id) => (
             <Post key={id}>
               <PostCover>
-                <img src={img} />
+                <img src={img} alt="Blog cover" />
               </PostCover>
               <PostTitle>{title}</PostTitle>
               <PostText>{addEllispis(text, 50)}</PostText>

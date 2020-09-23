@@ -15,7 +15,7 @@ import { Icons } from "../Icons";
 
 const services: { icon: React.ReactNode; heading: string; text: string }[] = [
   {
-    icon: <img src="/icons/briefcase.png" />,
+    icon: <img src="/icons/briefcase.png" alt="" />,
     heading: "Business Advisory Services",
     text: "Access our business advisory and coaching services for agripreneurs",
   },

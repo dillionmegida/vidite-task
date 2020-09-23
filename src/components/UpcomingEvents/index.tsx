@@ -48,7 +48,7 @@ export const UpcomingEvents = () => {
           {events.map(({ type, title, date, img }, i) => (
             <_Event key={i}>
               <EventCover>
-                <img src={img} />
+                <img src={img} alt="Event cover" />
               </EventCover>
               <EventType>{type}</EventType>
               <EventTitle>{title}</EventTitle>
