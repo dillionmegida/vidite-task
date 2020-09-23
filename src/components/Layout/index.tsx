@@ -1,10 +1,16 @@
 import React from "react";
+import { Header } from "../Header";
 import { Hero } from "../Hero";
 
-export const Layout = () => {
+type Props = {
+  showHero?: boolean;
+};
+
+export const Layout: React.FC<Props> = ({ showHero = false }) => {
   return (
     <div>
-      <Hero />
+      <Header />
+      {showHero && <Hero />}
     </div>
   );
 };
