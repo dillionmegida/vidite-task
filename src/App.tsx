@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
+import { Layout } from "./components/Layout";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { links } from "./constants/links";
+import { Home } from "./views/Home";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
-    <h1>React</h1>
+    <Router>
+      <Switch>
+        <Route exact path={links.HOME} component={Home} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
