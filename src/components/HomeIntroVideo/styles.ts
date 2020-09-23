@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
 import { BreakpointWrapper } from "../BreakpointWrapper";
-import { Play } from "../icons/Play";
 
 export const Container = styled(BreakpointWrapper)`
   padding: 50px;
@@ -33,10 +32,14 @@ export const PlayButton = styled.button`
   border-radius: 50%;
   background-color: ${colors.teal500};
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const RightColumn = styled.div`
-  h2, p {
+  h2,
+  p {
     margin: 0;
   }
 `;

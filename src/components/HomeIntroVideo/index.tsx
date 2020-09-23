@@ -1,5 +1,5 @@
 import React from "react";
-import { Play } from "../icons/Play";
+import { Icons } from "../Icons";
 import {
   Container,
   Heading,
@@ -16,7 +16,7 @@ export const HomeIntroVideo = () => {
       <LeftColumn>
         <VideoContainer>
           <PlayButton>
-            <Play color="white" />
+            <Icons name="play" color="white" />
           </PlayButton>
         </VideoContainer>
       </LeftColumn>
