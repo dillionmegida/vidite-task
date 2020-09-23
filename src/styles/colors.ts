@@ -4,6 +4,7 @@ export type Color =
   | "grey300"
   | "grey400"
   | "grey600"
+  | "grey800"
   | "blue300"
   | "blue600"
   | "blue700"
@@ -22,6 +23,7 @@ const colors: ColorDictionary = {
   grey300: "#e8e8e8",
   grey400: "#9b9b9b",
   grey600: "#bfc1c6",
+  grey800: "#9b9ea5",
   blue300: "#dff1f8",
   blue600: "#01b5f3",
   blue700: "#6ed3f5",
