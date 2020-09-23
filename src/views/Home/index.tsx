@@ -1,4 +1,5 @@
 import React from "react";
+import { HomeBlogSection } from "../../components/HomeBlogSection";
 import { HomeIntroVideo } from "../../components/HomeIntroVideo";
 import { HomeWhyRegister } from "../../components/HomeWhyRegister";
 import { Layout } from "../../components/Layout";
@@ -9,5 +10,6 @@ export const Home = () => (
     <PartnersAndSupporters />
     <HomeIntroVideo />
     <HomeWhyRegister />
+    <HomeBlogSection />
   </Layout>
 );
