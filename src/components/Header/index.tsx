@@ -12,7 +12,6 @@ import {
 import { Link } from "react-router-dom";
 import { links } from "../../constants/links";
 import { authLinks, mainLinks } from "./links";
-import styled from "styled-components";
 
 export const Header = () => {
   return (

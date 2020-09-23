@@ -7,4 +7,9 @@ export const links = {
   CONTACT: "/contact",
   LOGIN: "/login",
   REGISTER: "/register",
+  NEWS: "/news",
+  TERMS: "/terms",
+  COOKIE_POLICY: "/cookie",
+  PRIVACY: "/privacy",
+  WEATHER: "/weather",
 };
