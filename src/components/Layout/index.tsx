@@ -10,11 +10,12 @@ type Props = {
   showHero?: boolean;
 };
 
-export const Layout: React.FC<Props> = ({ showHero = false }) => {
+export const Layout: React.FC<Props> = ({ showHero = false, children }) => {
   return (
     <LayoutContainer>
       <Header />
       {showHero && <Hero />}
+      {children}
     </LayoutContainer>
   );
 };
