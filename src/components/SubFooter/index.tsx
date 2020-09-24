@@ -6,7 +6,7 @@ import {
   LogoContainer,
   Logo,
   Wrapper,
-  _Link,
+  _Link as Link,
   LeftColumn,
   RightColumn,
   NewsletterContainer,
@@ -26,17 +26,17 @@ export const SubFooter = () => {
 
         <RightColumn>
           <Links>
-            <_Link to={links.ABOUT}>About</_Link>
-            <_Link to={links.NEWS}>News</_Link>
-            <_Link to={links.EVENTS}>Events</_Link>
-            <_Link to={links.INTERNATIONAL}>International</_Link>
-            <_Link to={links.CONTACT}>Contact</_Link>
+            <Link to={links.ABOUT}>About</Link>
+            <Link to={links.NEWS}>News</Link>
+            <Link to={links.EVENTS}>Events</Link>
+            <Link to={links.INTERNATIONAL}>International</Link>
+            <Link to={links.CONTACT}>Contact</Link>
           </Links>
           <Links>
-            <_Link to={links.TERMS}>Terms of use</_Link>
-            <_Link to={links.COOKIE_POLICY}>Cookie policy</_Link>
-            <_Link to={links.PRIVACY}>Privacy policy</_Link>
-            <_Link to={links.WEATHER}>Weather</_Link>
+            <Link to={links.TERMS}>Terms of use</Link>
+            <Link to={links.COOKIE_POLICY}>Cookie policy</Link>
+            <Link to={links.PRIVACY}>Privacy policy</Link>
+            <Link to={links.WEATHER}>Weather</Link>
           </Links>
           <NewsletterContainer>
             <NewsletterHeader>Subscribe to our newsletter</NewsletterHeader>

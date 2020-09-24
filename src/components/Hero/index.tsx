@@ -8,7 +8,7 @@ import {
   HeroTitle,
   LeftColumn,
   RightColumn,
-  _Button,
+  _Button as Button,
 } from "./styles";
 
 export const Hero = () => {
@@ -25,11 +25,11 @@ export const Hero = () => {
               to start or grow your agribusiness
             </p>
           </HeroPara>
-          <_Button>JOIN US</_Button>
+          <Button>JOIN US</Button>
         </LeftColumn>
         <RightColumn>
-          <HeroImageWrapper >
-            <HeroImage src='/images/hero-people.png' />
+          <HeroImageWrapper>
+            <HeroImage src="/images/hero-people.png" />
           </HeroImageWrapper>
         </RightColumn>
       </ColumnsWrapper>

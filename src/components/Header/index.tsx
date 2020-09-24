@@ -4,19 +4,19 @@ import {
   LogoContainer,
   Logo,
   MainLinks,
-  _Link,
-  _AuthLink,
+  SLink,
+  AuthLink,
   AuthLinks,
-  Header as _Header,
+  Header,
 } from "./styles";
 import { Link } from "react-router-dom";
 import { links } from "../../constants/links";
 import { authLinks, mainLinks } from "./links";
 
-export const Header = () => {
+export const PageHeader = () => {
   return (
     <HeaderContainer>
-      <_Header>
+      <Header>
         <LogoContainer>
           <Link to={links.HOME}>
             <Logo src="/images/logo.png" />
@@ -26,7 +26,7 @@ export const Header = () => {
           <MainLinks>
             {mainLinks.map(({ label, href }) => (
               <li>
-                <_Link to={href}>{label}</_Link>
+                <SLink to={href}>{label}</SLink>
               </li>
             ))}
           </MainLinks>
@@ -35,14 +35,14 @@ export const Header = () => {
           <AuthLinks>
             {authLinks.map(({ label, href }, i) => (
               <li>
-                <_AuthLink invertColor={i === 1} to={href}>
+                <AuthLink invertColor={i === 1} to={href}>
                   {label}
-                </_AuthLink>
+                </AuthLink>
               </li>
             ))}
           </AuthLinks>
         </div>
-      </_Header>
+      </Header>
     </HeaderContainer>
   );
 };

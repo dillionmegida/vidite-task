@@ -8,7 +8,7 @@ import {
   Heading,
   ShowMoreLink,
   EventGroup,
-  Event as _Event,
+  SEvent,
   EventCover,
   EventType,
   EventTitle,
@@ -46,14 +46,14 @@ export const UpcomingEvents = () => {
         </TopSection>
         <EventGroup>
           {events.map(({ type, title, date, img }, i) => (
-            <_Event key={i}>
+            <SEvent key={i}>
               <EventCover>
                 <img src={img} alt="Event cover" />
               </EventCover>
               <EventType>{type}</EventType>
               <EventTitle>{title}</EventTitle>
               <EventDate>{date}</EventDate>
-            </_Event>
+            </SEvent>
           ))}
         </EventGroup>
       </Wrapper>

@@ -41,7 +41,7 @@ export const AuthLinks = styled.ul`
   }
 `;
 
-export const _Link = styled(Link)`
+export const SLink = styled(Link)`
   font-size: 17px;
   color: black;
   padding: 15px;
@@ -51,7 +51,7 @@ export const _Link = styled(Link)`
   }
 `;
 
-export const _AuthLink = styled(_Link)<{ invertColor?: boolean }>`
+export const AuthLink = styled(SLink)<{ invertColor?: boolean }>`
   display: block;
   background-color: ${({ invertColor }) =>
     invertColor ? colors.teal500 : "transparent"};

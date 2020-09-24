@@ -41,7 +41,7 @@ export const EventGroup = styled.div`
   }
 `;
 
-export const Event = styled.div`
+export const SEvent = styled.div`
   width: 100%;
 `;
 
